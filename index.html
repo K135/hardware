@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+	<title>Hardware-webc</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/framework7.bundle.css">
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="css/">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<style>
+	
+	.back{
+		display:none !important;
+	}
+
+			 [type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type=radio] +  div {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+/* CHECKED STYLES */
+  [type=radio]:checked +  div {
+  border: 2px solid rgb(27, 23, 90);
+  border-radius:12px;
+}
+ 
+
+#tab-2  input[type=checkbox] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+#tab-2 input[type=checkbox] +  div {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+#tab-2  input[type=checkbox]:checked +  div {
+  border: 2px solid rgb(27, 23, 90);
+  border-radius:12px;
+}
+
+
+
+
+
+
+ 
+
+
+	</style>
+</head>
+<body >
+	
+	<div id="app" >
+		
+		<div class="view view-main view-init ios-edges" data-url="/">
+		
+			<div class="page page-home" style="background: linear-gradient(to bottom, #c5e4ec 0%, #aedce4 100%);"> 
+
+
+				<div id="cart" class="link popup-open" data-popup=".popup-full" style="position:fixed;height:40px;line-height:40px;width:40px;top:15px;right:15px;z-index: 100;border-radius:50%;background:#01c77f;color:white;cursor:pointer;transform:scale(0);transition:0.3s;">
+					
+				
+					<div class="item-content">
+						<center>
+						<div class="item-media">
+							<i class="fas fa-shopping-cart fa-1x"></i>
+						</div>
+					</center>
+					
+					</div>
+				
+			     </div>
+				
+
+
+			<div class="popup popup-full">
+				<div class="page">
+					<!-- navbar -->
+					<div class="navbar navbar-page">
+						<div class="navbar-inner sliding">
+							<div class="right">
+								<a href="#" class="link popup-close buttons" style="padding:0 10px;height:30px;border-radius: 50%;margin:0;">
+									<i class="fa fa-times " aria-hidden="true"></i>
+									
+								</a>
+							</div>
+							<div class="title">
+								Cart
+							</div>
+							
+						</div>
+					</div>
+					<!-- end navbar -->
+					<div class="page-content">
+						
+						<!-- tracking order -->
+		<div class="segments-page">
+			<div class="container">
+
+				<div class="tracking-order">
+					<div class="accordion accordion-separate" style="position:relative !important;">
+						
+						<div class="list accordion-list" >
+							
+							<ul>
+								
+								<li class="swipeout accordion-item accordion-item-opened list-box"  style="position:relative !important; ">
+									<span class="swipeout-delete" style="position:absolute !important; z-index:99 !important;right:10px !important;top:12px !important;"><i style="color:rgb(214, 52, 52);"class="fas fa-trash"></i></span>
+									<a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Cat: #12787-66 Sub-Cat: #isnossef 
+												
+											</div>
+										</div>
+									</a>
+									<div class="accordion-item-content">
+										<div class="wrap-title wrap-title-first">
+											<h3>Details</h3>
+										</div>
+										<div class="info-product-order">
+											<div class="data-table">
+												<table>
+													<thead >
+														<tr >
+
+															
+															<th class="label-cell" style="font-weight:300;font-family: sans-serif !important;font-size: 17px !important;">
+																Dimension
+															</th>
+															<th class="label-cell">
+																UOM
+															</th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+
+
+													
+														<tr>
+															<td class="label-cell">
+																New York
+															</td>
+															<td class="label-cell">
+																San Diego
+															</td>
+														</tr>
+
+
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+									</div>
+								
+								
+								
+									<div style="position: absolute !important; top:0 !important;left:0 !important;right:0 !important;bottom:0 !important;z-index:10 !important;"></div>
+								
+								</li>
+
+								<li class="divider-space-text"></li>
+
+								<li class="swipeout accordion-item accordion-item-opened list-box" style="position:relative !important;">
+									<span class="swipeout-delete" style="position:absolute !important; z-index:99 !important;right:10px !important;top:12px !important;"><i style="color:rgb(214, 52, 52);"class="fas fa-trash"></i></span>
+									<a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Cat: #12787-66 Sub-Cat: #isnossef 
+												
+											</div>
+										</div>
+									</a>
+									<div class="accordion-item-content">
+										<div class="wrap-title wrap-title-first">
+											<h3>Details</h3>
+										</div>
+										<div class="info-product-order">
+											<div class="data-table">
+												<table>
+													<thead >
+														<tr >
+
+															
+															<th class="label-cell" style="font-weight:300;font-family: sans-serif !important;font-size: 17px !important;">
+																Dimension
+															</th>
+															<th class="label-cell">
+																UOM
+															</th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+
+
+													
+														<tr>
+															<td class="label-cell">
+																New York
+															</td>
+															<td class="label-cell">
+																San Diego
+															</td>
+														</tr>
+
+
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+									
+									</div>
+									
+										<div style="position: absolute !important; top:0 !important;left:0 !important;right:0 !important;bottom:0 !important;z-index:10 !important;"></div>
+								</li>
+								
+								<li class="divider-space-text"></li>
+
+
+
+								<li class="swipeout accordion-item accordion-item-opened list-box" style="position:relative !important;">
+									<span class="swipeout-delete" style="position:absolute !important; z-index:99 !important;right:10px !important;top:12px !important;"><i style="color:rgb(214, 52, 52);"class="fas fa-trash"></i></span>
+									<a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Cat: #12787-66 Sub-Cat: #isnossef 
+												
+											</div>
+										</div>
+									</a>
+									<div class="accordion-item-content">
+										<div class="wrap-title wrap-title-first">
+											<h3>Details</h3>
+										</div>
+										<div class="info-product-order">
+											<div class="data-table">
+												<table>
+													<thead >
+														<tr >
+
+															
+															<th class="label-cell" style="font-weight:300;font-family: sans-serif !important;font-size: 17px !important;">
+																Dimension
+															</th>
+															<th class="label-cell">
+																UOM
+															</th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+
+
+													
+														<tr>
+															<td class="label-cell">
+																New York
+															</td>
+															<td class="label-cell">
+																San Diego
+															</td>
+														</tr>
+
+
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+									</div>
+								
+								
+								</li>
+
+								<li class="divider-space-text"></li>
+
+
+
+
+								<li class="swipeout accordion-item accordion-item-opened list-box" style="position:relative !important;">
+									<span class="swipeout-delete" style="position:absolute !important; z-index:99 !important;right:10px !important;top:12px !important;"><i style="color:rgb(214, 52, 52);"class="fas fa-trash"></i></span>
+									<a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Cat: #12787-66 Sub-Cat: #isnossef 
+												
+											</div>
+										</div>
+									</a>
+									<div class="accordion-item-content">
+										<div class="wrap-title wrap-title-first">
+											<h3>Details</h3>
+										</div>
+										<div class="info-product-order">
+											<div class="data-table">
+												<table>
+													<thead >
+														<tr >
+
+															
+															<th class="label-cell" style="font-weight:300;font-family: sans-serif !important;font-size: 17px !important;">
+																Dimension
+															</th>
+															<th class="label-cell">
+																UOM
+															</th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+
+
+													
+														<tr>
+															<td class="label-cell">
+																New York
+															</td>
+															<td class="label-cell">
+																San Diego
+															</td>
+														</tr>
+
+
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+									</div>
+								</li>
+
+								<li class="divider-space-text"></li>
+
+
+
+								<li class="swipeout accordion-item accordion-item-opened list-box" style="position:relative !important;">
+									<span class="swipeout-delete" style="position:absolute !important; z-index:99 !important;right:10px !important;top:12px !important;"><i style="color:rgb(214, 52, 52);"class="fas fa-trash"></i></span>
+									<a href="#" class="item-content item-link">
+										<div class="item-inner">
+											<div class="item-title">Cat: #12787-66 Sub-Cat: #isnossef 
+												
+											</div>
+										</div>
+									</a>
+									<div class="accordion-item-content">
+										<div class="wrap-title wrap-title-first">
+											<h3>Details</h3>
+										</div>
+										<div class="info-product-order">
+											<div class="data-table">
+												<table>
+													<thead >
+														<tr >
+
+															
+															<th class="label-cell" style="font-weight:300;font-family: sans-serif !important;font-size: 17px !important;">
+																Dimension
+															</th>
+															<th class="label-cell">
+																UOM
+															</th>
+
+
+														</tr>
+													</thead>
+													<tbody>
+
+
+													
+														<tr>
+															<td class="label-cell">
+																New York
+															</td>
+															<td class="label-cell">
+																San Diego
+															</td>
+														</tr>
+
+
+
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+									</div>
+								</li>
+
+								<li class="divider-space-text"></li>
+
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- end tracking order -->
+				
+					</div>
+				
+				</div>
+				
+
+			</div>
+
+
+			<!-- popup attention -->
+			<div class="popup popup-attention pp1">
+				<div class="content-box" >
+					<form class="list floating-outline-inputs">
+						<ul>
+							<li class="item-content item-input item-input-outline ">
+								<div class="item-inner">
+									<div class="item-title item-floating-label">Units</div>
+									<div class="item-input-wrap">
+										<input id="pi1" type="number" placeholder="1" value="1">
+										<span class="input-clear-button"></span>
+									</div>
+								</div>
+							</li>
+							
+						
+							
+							
+							<li class="item-content item-input item-input-outline">
+								<div class="item-inner">
+									<div class="item-title item-floating-label">UOM</div>
+							<div class="item-input-wrap input-dropdown-wrap">
+								<select id="pc1">
+									
+									
+									<option value="China">KG</option>
+									<option value="France">Grams</option>
+									<option value="United States">sgsg</option>
+								
+								</select>
+							</div>
+								</div>
+							</li>
+						</ul>
+						<a  class="link popup-close buttons" onclick="updateBadge()"> save </a>
+					</form>
+				</div>
+
+				
+			</div>
+			<!-- end popup attention -->
+
+
+			<div class="popup popup-attention pp2">
+				<div class="content-box" >
+					<form class="list floating-outline-inputs">
+						<ul>
+							<li class="item-content item-input item-input-outline ">
+								<div class="item-inner">
+									<div class="item-title item-floating-label">Units</div>
+									<div class="item-input-wrap">
+										<input type="number" placeholder="1" value="1">
+										<span class="input-clear-button"></span>
+									</div>
+								</div>
+							</li>
+							
+						
+							
+							
+							<li class="item-content item-input item-input-outline">
+								<div class="item-inner">
+									<div class="item-title item-floating-label">UOM</div>
+							<div class="item-input-wrap input-dropdown-wrap">
+								<select>
+									
+									
+									<option value="China">KG2</option>
+									<option value="France">Grams2</option>
+									<option value="United States">sgsg2</option>
+								
+								</select>
+							</div>
+								</div>
+							</li>
+						</ul>
+						<a  class="link popup-close buttons"> save2 </a>
+					</form>
+				</div>
+
+				
+			</div>
+
+
+
+
+
+			
+				<div class="toolbar tabbar tabbar-labels toolbar-bottom"  >
+					
+					
+					<div class="toolbar-inner" style="position:relative;">
+						<div style="position: absolute;top:0;left:0;right:0;bottom:0;z-index:2;"></div>
+
+						<a id="tab0" href="#tab-0" class="tab-link tab-link-active" >
+							<i id="icon0" class=" fas fa-dot-circle" style="padding-bottom: 5px;"></i>
+							<span id="text0"  class="tabbar-label">Category</span>
+						</a>
+
+
+						<a id="tab1" href="#tab-1" class="tab-link" >
+							<i id="icon1" class=" fas fa-dot-circle" style="padding-bottom: 5px;"></i>
+							<span id="text1"  class="tabbar-label">Sub Category</span>
+						</a>
+						<a id="tab2" href="#tab-2" class="tab-link" >
+							<i id="icon2" class="fas fa-dot-circle" style="padding-bottom: 5px;"></i>
+							<span id="text2" class="tabbar-label">Brand</span>
+						</a>
+						<a id="tab3" href="#tab-3" class="tab-link" >
+							<i id="icon3" class="fas fa-dot-circle" style="padding-bottom: 5px;"></i>
+							<span id="text3" class="tabbar-label">Product</span>
+						</a>
+						<a id="tab4" href="#tab-4" class="tab-link" >
+							<i  id="icon4" class="fas fa-dot-circle" style="padding-bottom: 5px;"></i>
+							<span  id="text4" class="tabbar-label">Feedback</span>
+						</a>
+						<a id="tab5" href="#tab-5" class="tab-link" >
+							<i id="icon5" class="fas fa-dot-circle" style="padding-bottom: 5px;"></i>
+							<span id="text5" class="tabbar-label">Enquire</span>
+						</a>
+					</div>
+				</div>
+				<div class="tabs-animated-wrap">
+					<div class="tabs">
+
+						<div id="tab-0" class=" page-content tab " >
+							<!-- home -->
+							<section>
+										<!-- navbar -->
+										<div class="navbar navbar-page">
+											<div class="navbar-inner ">
+												<div class="title" >
+													Choose Category
+												</div>
+											</div>
+										</div>
+							<!-- end navbar -->
+						
+
+
+
+										<!-- grid system -->
+										<div class="segments-page">
+											<div class="container">
+												
+												<!-- grid with gap -->
+
+												<!-- 50% or .col-50 -->
+												<div class="row">
+
+
+													
+														
+													 
+
+													
+													<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+														<label>
+															<input type="radio" name="test" value="small" >
+														<div class="grids">
+															<div class="card">
+																<img src="images/grid1.jpg" alt="">
+																<div class="content-text">
+																	<h6>Channel</h6>
+																</div>
+															</div>
+														</div>
+													</label>
+													</div>
+
+
+
+
+
+													<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+														<label>
+															<input type="radio" name="test" value="small" >
+														<div class="grids">
+															<div class="card">
+																<img src="images/grid1.jpg" alt="">
+																<div class="content-text">
+																	<h6>Flat</h6>
+																</div>
+															</div>
+														</div>
+													</label>
+													</div>
+
+
+
+													<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+														<label>
+															<input type="radio" name="test" value="small" >
+														<div class="grids">
+															<div class="card">
+																<img src="images/grid1.jpg" alt="">
+																<div class="content-text">
+																	<h6>Angle</h6>
+																</div>
+															</div>
+														</div>
+													</label>
+													</div>
+												</div>
+												<!-- end 50% or .col-50 -->
+
+											</div>
+										</div>
+										<!-- end grid system -->
+
+										<!----------Button------------------->
+										<div class="container " style="margin-bottom:35px;">
+											<div class="row">
+												<div class="col-50"></div>
+												<div class="col-50" style="max-width:200px;">
+													<button id="next0" class="button button-fill-ios button-large-ios button-w-icon">Next</button>
+												</div>
+												
+											</div>
+											
+										</div>
+
+										<!-----------BUTTON ----------------->
+							</section>
+
+
+
+
+
+
+							<!-- end home -->
+						</div>
+
+
+						<div id="tab-1" class=" page-content tab " >
+							<!-- home -->
+							<section>
+										<!-- navbar -->
+										<div class="navbar navbar-page">
+											<div class="navbar-inner sliding" >
+												<div class="title">
+													Choose Sub-Category
+												</div>
+											</div>
+										</div>
+							<!-- end navbar -->
+						
+
+
+
+										<!-- grid system -->
+										<div class="segments-page">
+											<div class="container">
+												
+												<!-- grid with gap -->
+
+												<!-- 50% or .col-50 -->
+												<div class="row">
+
+
+													
+														
+													 
+
+													
+													<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+														<label>
+															<input type="radio" name="test" value="small" >
+														<div class="grids">
+															<div class="card">
+																<img src="images/grid1.jpg" alt="">
+																<div class="content-text">
+																	<h6>Channel</h6>
+																</div>
+															</div>
+														</div>
+													</label>
+													</div>
+
+
+
+
+
+													<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+														<label>
+															<input type="radio" name="test" value="small" >
+														<div class="grids">
+															<div class="card">
+																<img src="images/grid1.jpg" alt="">
+																<div class="content-text">
+																	<h6>Flat</h6>
+																</div>
+															</div>
+														</div>
+													</label>
+													</div>
+
+
+
+													<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+														<label>
+															<input type="radio" name="test" value="small" >
+														<div class="grids">
+															<div class="card">
+																<img src="images/grid1.jpg" alt="">
+																<div class="content-text">
+																	<h6>Angle</h6>
+																</div>
+															</div>
+														</div>
+													</label>
+													</div>
+
+
+
+
+
+
+
+												
+
+
+												
+
+												
+												
+
+
+
+
+												</div>
+												<!-- end 50% or .col-50 -->
+
+											
+												
+											
+
+											
+
+
+											
+
+												
+
+											</div>
+										</div>
+										<!-- end grid system -->
+
+										<!----------Button------------------->
+										<div class="container " style="margin-bottom:35px;">
+											<div class="row">
+												<div class="col-50"></div>
+												<div class="col-50" style="max-width:200px;">
+													<button id="next1" class="button button-fill-ios button-large-ios button-w-icon">Next</button>
+												</div>
+												
+											</div>
+											
+										</div>
+
+										<!-----------BUTTON ----------------->
+									</section>
+
+
+
+
+
+
+							<!-- end home -->
+						</div>
+
+
+
+
+
+
+						<div id="tab-2" class="page-content tab ">
+
+							<!-- elements -->
+
+							<!-- navbar -->
+										<div class="navbar navbar-page">
+											<div class="navbar-inner sliding" >
+												<div class="title">
+													Choose Brand
+												</div>
+											</div>
+										</div>
+							<!-- end navbar -->
+
+							<!-- list elements -->
+									 <div class="list-elements segments-page">  
+										<div class="container">
+											<div class="list list-box">
+												<ul>
+													<li>
+														<a href="/accordion/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-stream"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Accordion
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/badge/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-shield-alt"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Badge
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/buttons/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-hockey-puck"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Buttons
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/cards/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-clone"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Cards
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/cards-expandable/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-copy"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Cards Expandable
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/tags/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-tag"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Chips / Tags
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/contact-list/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-user-alt"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Contact List
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/form-elements/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-clipboard-list"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Form Elements
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/grid-system/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-th-large"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Grid / Layout
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/lazy-load/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-sync"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Lazy Load
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/list-view/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-list-ul"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		List View
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/menu/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-list-ul"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Menu
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/navbar/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-grip-lines"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Navbar
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/popover/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-arrows-alt"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Popover
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/popup/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-expand"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Popup
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/preloader/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-spinner"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Preloader
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/searchbar/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-search"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Searchbar
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/searchbar-expandable/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-search"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Searchbar Expandable
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/smart-select/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-mouse-pointer"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Smart Select
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/sortable/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-sort"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Sortable
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/subnavbar/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-bars"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Subnavbar
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/swipeout/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-hand-point-up"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Swipeout
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/swiper-slider/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-hand-pointer"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Swiper Slider
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/tabs/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-grip-horizontal"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Tabs
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/timeline/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-history"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Timeline
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/toast/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-circle"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Toast
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/toggle/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-toggle-on"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Toggle
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/toolbar-tabbar/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-grip-horizontal"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Toolbar & Tabbar
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="/tooltip/">
+															<div class="item-content">
+																<div class="item-media">
+																	<i class="fas fa-info"></i>
+																</div>
+																<div class="item-inner">
+																	<div class="item-title">
+																		Tooltip
+																	</div>
+																</div>
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>  
+						
+							<!-- end list elements -->
+
+							<!-- end elements -->
+									
+
+								<!-- grid system -->
+
+
+
+								<div class="list simple-list list-box" style="margin-top:15px;">
+									<ul>
+									
+										<li >
+											<span>Select All</span>
+											<label id="toggle2" class="toggle toggle-init color-green">
+												<input type="checkbox" >
+												<span class="toggle-icon" onclick="selectToggler()"></span>
+											</label>
+										</li>
+									
+									</ul>
+								</div>
+
+								<div class="segments-page">
+									<div class="container">
+									
+										
+								    
+
+										
+										<!-- grid with gap -->
+
+										<!-- 50% or .col-50 -->
+										<div class="row">
+
+
+											
+												
+											 
+
+											
+											<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+												<label>
+													<input type="checkbox" name="brand" value="small" >
+												<div class="grids">
+													<div class="card">
+														<img src="images/grid1.jpg" alt="">
+														<div class="content-text">
+															<h6>Rolling</h6>
+														</div>
+													</div>
+												</div>
+											</label>
+											</div>
+
+
+
+											<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+												<label>
+													<input type="checkbox" name="brand" value="small" >
+												<div class="grids">
+													<div class="card">
+														<img src="images/grid1.jpg" alt="">
+														<div class="content-text">
+															<h6>Jindal</h6>
+														</div>
+													</div>
+												</div>
+											</label>
+											</div>
+
+
+											<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+												<label>
+													<input type="checkbox" name="brand" value="small" >
+												<div class="grids">
+													<div class="card">
+														<img src="images/grid1.jpg" alt="">
+														<div class="content-text">
+															<h6>Tata</h6>
+														</div>
+													</div>
+												</div>
+											</label>
+											</div>
+
+											<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+												<label>
+													<input type="checkbox" name="brand" value="small" >
+												<div class="grids">
+													<div class="card">
+														<img src="images/grid1.jpg" alt="">
+														<div class="content-text">
+															<h6>Inframent</h6>
+														</div>
+													</div>
+												</div>
+										    	</label>
+
+											</div>
+
+											
+
+
+										
+										
+
+
+
+
+										</div>
+										<!-- end 50% or .col-50 -->
+
+									
+								
+
+									</div>
+								</div>
+								<!-- end grid system -->
+
+						    	<!----------Button------------------->
+								<div class="container " style="margin-bottom:35px;">
+									<div class="row">
+										<div class="col-50"></div>
+										<div class="col-50" style="max-width:200px;">
+											<button id="next2" class="button button-fill-ios button-large-ios button-w-icon">Next</button>
+										</div>
+											
+								   </div>
+										
+							    </div>
+
+									<!-----------BUTTON ----------------->	
+
+
+						</div>
+						
+						<div id="tab-3" class="page-content tab">
+
+					
+							
+								<!-- navbar -->
+								<div class="navbar navbar-page">
+									<div class="navbar-inner sliding">
+										
+										<div class="title">
+											Search Bar
+										</div>
+										<div class="subnavbar" >
+											<form class="searchbar searchbar-init" data-search-container=".search-list" data-search-in=".item-title" style="width:100%;">
+												<div class="searchbar-inner">
+													<div class="searchbar-input-wrap">
+														<input type="search" placeholder="Search">
+														<i class="searchbar-icon"></i>
+														<span class="input-clear-button"></span>
+													</div>
+													<span class="searchbar-disable-button">Cancel</span>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+
+								<!-- end navbar -->
+							
+								<div class="" style="margin-top:40px;">
+									<div class="searchbar-backdrop"></div>
+									<div class="segments-page">
+										<div class="container ">
+										<form action="" id="prod-dim">
+											<div class="list search-list searchbar-found list-box ">
+												<ul>
+													
+													<li class="item-content " style="padding-left:0;" >
+														
+														
+														<div class="item-inner" style="padding-right:10px;">
+															<label style="width:80%;" class="item-content ">
+															
+															<div class="item-title" style="color:black;">
+																<input type="checkbox" name="sefs" value="awda">
+																<span></span>
+                												  50x50x50MM					
+							                               </div> 
+														</label> 
+														<div class="item-after item-media popup-open" data-popup=".pp1" >
+																
+															<span id="b1" class="badge">11109</span>  &nbsp;
+														
+															<div class="" >
+																<i class="fas fa-edit" style="color:green;"></i>
+															</div>
+															
+															</div>
+																
+														
+														</div>
+  
+													</li>
+
+
+													
+
+
+
+													<li class="item-content " style="padding-left:0;">
+														
+														
+														<div class="item-inner" style="padding-right:10px;">
+															<label style="width:80%;" class="item-content ">
+															
+															<div class="item-title" style="color:black;">
+																<input type="checkbox" name="sefs" value="awda">
+																	 Demo2wegwe Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+																 	 Culpa reprehenderit nulla temporibus at eum odit enim quasi consequuntur?
+																  	 Officia debitis corrupti dolore perferendis iste quisquam quasi delectus voluptatum et quod.
+															</div> 
+														</label>  
+														<div class="item-after item-media  popup-open" data-popup=".pp2">
+																
+															<span class="badge">11109</span>  &nbsp;
+														
+															<div class="" >
+																<i class="fas fa-edit" style="color:green;"></i>
+															</div>
+															
+															</div>
+																
+														
+														</div>
+  
+													</li>
+
+
+													<li class="item-content " style="padding-left:0;">
+														
+														
+														<div class="item-inner" style="padding-right:10px;">
+															<label style="width:80%;" class="item-content ">
+															
+															<div class="item-title" style="color:black;">
+																<input type="checkbox" name="sefs" value="awda">
+																	 Demo3wegwe Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+																 	 Culpa reprehenderit nulla temporibus at eum odit enim quasi consequuntur?
+																  	 Officia debitis corrupti dolore perferendis iste quisquam quasi delectus voluptatum et quod.
+															</div> 
+														</label> 
+														<div class="item-after item-media  popup-open" data-popup=".popup-attention">
+																
+															<span class="badge">11109</span>  &nbsp;
+														
+															<div class="" >
+																<i class="fas fa-edit" style="color:green;"></i>
+															</div>
+															
+															</div>
+																
+														
+														</div>
+  
+													</li>
+
+
+
+
+
+
+													<li class="item-content " style="padding-left:0;">
+														
+														
+														<div class="item-inner" style="padding-right:10px;">
+															<label style="width:80%;" class="item-content ">
+															
+															<div class="item-title" style="color:black;">
+																<input type="checkbox" name="sefs" value="awda">
+																	 Demo4wegwe Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+																 	 Culpa reprehenderit nulla temporibus at eum odit enim quasi consequuntur?
+																  	 Officia debitis corrupti dolore perferendis iste quisquam quasi delectus voluptatum et quod.
+															</div> 
+														</label>  
+															<div class="item-after item-media  popup-open" data-popup=".popup-attention">
+																
+																<span class="badge">11109</span>  &nbsp;
+															
+																<div class="" >
+																	<i class="fas fa-edit" style="color:green;"></i>
+																</div>
+																
+																</div>
+															
+															
+																
+														
+														</div>
+  
+													</li>
+
+
+
+
+
+
+													<li class="item-content " style="padding-left:0;">
+														
+														
+														<div class="item-inner" style="padding-right:10px;">
+															<label style="width:80%;" class="item-content ">
+															
+															<div class="item-title" style="color:black;">
+																<input type="checkbox" name="sefs" value="awda">
+																	 Demo5wegwe Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+																 	 Culpa reprehenderit nulla temporibus at eum odit enim quasi consequuntur?
+																  	 Officia debitis corrupti dolore perferendis iste quisquam quasi delectus voluptatum et quod.
+															</div> 
+														</label> 
+														<div class="item-after item-media  popup-open" data-popup=".popup-attention">
+																
+															<span class="badge">11109</span>  &nbsp;
+														
+															<div class="" >
+																<i class="fas fa-edit" style="color:green;"></i>
+															</div>
+															
+															</div>
+																
+														
+														</div>
+  
+													</li>
+												
+												</ul>
+											</div>
+										</form>
+											<div class="searchbar-not-found">
+												<div>Nothing Found</div>
+											</div>
+										</div>
+							
+										
+									</div>
+								</div>
+
+								<!----------Button------------------->
+								<div class="container " style="margin-bottom:35px;">
+									<div class="row">
+										<div class="col-50"></div>
+										<div class="col-50" style="max-width:200px;">
+											<button id="next3" class="button button-fill-ios button-large-ios button-w-icon">Next</button>
+										</div>
+											
+								   </div>
+										
+							    </div>
+
+									<!-----------BUTTON ----------------->	
+
+
+
+							
+						</div>
+						
+				
+							
+
+
+
+						
+
+					
+							
+
+					
+
+						<div id="tab-4" class="page-content tab">
+
+							<!-- shop -->
+
+							<!-- navbar -->
+							<div class="navbar navbar-page">
+								<div class="navbar-inner sliding">
+									<div class="title">
+										Feedback
+									</div>
+								</div>
+							</div>
+							<!-- end navbar -->
+
+							<div style="padding-top:40px;"></div>
+							<div class="content-box" >
+								<form id="form4" class="list floating-outline-inputs">
+									<ul>
+									
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Feedback or Comments</div>
+												<div class="item-input-wrap">
+													<textarea placeholder="Text here" style="height:200px;"></textarea>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</form>
+							</div>
+						    <div style="padding-top:40px;"></div>
+							<!----------Button------------------->
+							<div class="container " style="margin-bottom:35px;">
+								<div class="row">
+									<div class="col-50"></div>
+									<div class="col-50" style="max-width:200px;">
+										<button id="next4" class="button button-fill-ios button-large-ios button-w-icon">Next</button>
+									</div>
+										
+							   </div>
+									
+							</div>
+
+								<!-----------BUTTON ----------------->	
+
+
+								<!----------Reset------------------->
+							<!-- <div class="container " style="margin-bottom:35px;">
+								<div class="row">
+									<div class="col-50"></div>
+									<div class="col-50" style="max-width:200px;">
+										<button id="reset4" class="button button-fill-ios button-large-ios button-w-icon">Reset</button>
+									</div>
+										
+							   </div>
+									
+							</div> -->
+
+								<!-----------Reset ----------------->	
+
+
+						<section>
+								<!-- navbar -->
+							<div class="navbar navbar-page">
+								<div class="navbar-inner sliding">
+									<div class="title">
+										Add more products
+									</div>
+								</div>
+							</div>
+							<!-- end navbar -->
+
+									<!-- grid system -->
+									<div class="segments-page">
+										<div class="container">
+											
+											<!-- grid with gap -->
+
+											<!-- 50% or .col-50 -->
+											<div class="row">
+
+
+												
+													
+												 
+
+												
+												<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+													<label>
+														<input type="radio" name="test" value="small" >
+													<div class="grids">
+														<div class="card">
+															<img src="images/grid1.jpg" alt="">
+															<div class="content-text">
+																<h6>Channel</h6>
+															</div>
+														</div>
+													</div>
+												</label>
+												</div>
+
+
+
+
+
+												<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+													<label>
+														<input type="radio" name="test" value="small" >
+													<div class="grids">
+														<div class="card">
+															<img src="images/grid1.jpg" alt="">
+															<div class="content-text">
+																<h6>Flat</h6>
+															</div>
+														</div>
+													</div>
+												</label>
+												</div>
+
+
+
+												<div class="col-50 " style="max-width:300px; margin-bottom:15px;">
+													<label>
+														<input type="radio" name="test" value="small" >
+													<div class="grids">
+														<div class="card">
+															<img src="images/grid1.jpg" alt="">
+															<div class="content-text">
+																<h6>Angle</h6>
+															</div>
+														</div>
+													</div>
+												</label>
+												</div>
+											</div>
+											<!-- end 50% or .col-50 -->
+
+										</div>
+									</div>
+									<!-- end grid system -->
+
+									<!----------Button------------------->
+									<div class="container " style="margin-bottom:35px;">
+										<div class="row">
+											<div class="col-50"></div>
+											<div class="col-50" style="max-width:200px;">
+												<button id="next0" class="button button-fill-ios button-large-ios button-w-icon">Next</button>
+											</div>
+											
+										</div>
+										
+									</div>
+
+									<!-----------BUTTON ----------------->
+
+								</section>
+
+
+
+									<!-- list shop -->
+							 <div class="list-shop segments-page"> 
+								<div class="container">
+									<div class="list list-box">
+										<ul>
+											<li>
+												<a href="/home-shop/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-shopping-cart"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Home Shop
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/product/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-tshirt"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Product
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/product-details/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-expand-arrows-alt"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Product Details
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/cart/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-shopping-cart"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Shopping Cart
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/checkout/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-cart-arrow-down"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Checkout
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/categories/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-tags"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Categories
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/order-history/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-history"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Order History
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/tracking-order/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-truck"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Cart
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/wishlist/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-heart"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Wishlist
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/account-buyer/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-user"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Account Buyer
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="/account-seller/">
+													<div class="item-content">
+														<div class="item-media">
+															<i class="fas fa-user"></i>
+														</div>
+														<div class="item-inner">
+															<div class="item-title">
+																Account Seller
+															</div>
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>  
+
+							<!-- end list shop--->
+
+
+						
+
+						</div>
+
+						<div id="tab-5" class="page-content tab">
+
+
+							<!---- navbar -->
+							<div class="navbar navbar-page">
+								<div class="navbar-inner sliding">
+									<div class="title">
+										Enquire
+									</div>
+								</div>
+							</div>
+							<!-- end navbar -->
+
+							<!----------FORM ------------->
+							<div class="content-box" style="margin-top:15px;">
+								<form class="list floating-outline-inputs">
+									<ul>
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">First Name</div>
+												<div class="item-input-wrap">
+													<input type="text" placeholder="Your name">
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Last Name</div>
+												<div class="item-input-wrap">
+													<input type="text" placeholder="Your name">
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+
+
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Email</div>
+												<div class="item-input-wrap">
+													<input type="email" placeholder="Your e-mail">
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Country</div>
+										<div class="item-input-wrap input-dropdown-wrap">
+											<select>
+												
+												<option value="" disabled selected></option>
+												<option value="China">China</option>
+												<option value="France">France</option>
+												<option value="United States">United States</option>
+												<option value="Italy">Italy</option>
+												<option value="Spain">Spain</option>
+												<option value="United Kingdom">United Kingdom</option>
+												<option value="Germany">Germany</option>
+												<option value="Mexico">Mexico</option>
+												<option value="Thailand">Thailand</option>
+												<option value="Turkey">Turkey</option>
+											</select>
+										</div>
+											</div>
+										</li>
+
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Passowrd</div>
+												<div class="item-input-wrap">
+													<input type="password" placeholder="Your password">
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">URL</div>
+												<div class="item-input-wrap">
+													<input type="url" placeholder="URL">
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Phone</div>
+												<div class="item-input-wrap">
+													<input type="tel" placeholder="Your phone number">
+													<span class="input-clear-button"></span>
+												</div>
+											</div>
+										</li>
+										<li class="item-content item-input item-input-outline">
+											<div class="item-inner">
+												<div class="item-title item-floating-label">Textarea</div>
+												<div class="item-input-wrap">
+													<textarea placeholder="Text here"></textarea>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</form>
+							</div>
+							<!----------FORM END------------->
+							
+								<!----------Button------------------->
+
+								<div class="container " style="margin-top:10px; margin-bottom:10px;">
+									<div class="row">
+										<div class="col-50"></div>
+										<div class="col-50" style="max-width:200px;">
+											<button id="next5" class="button button-fill-ios button-large-ios button-w-icon">Enquire</button>
+										</div>
+											
+								    </div>
+										
+								</div>
+	
+							<!-----------BUTTON ----------------->	
+	 
+					    </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script> 
+       var selectAllBrand = 0;
+	 
+	  
+	</script>
+	<script src="js/checkboxRender.js"></script>
+	<script src="js/transfer.js"></script>
+	<script src="js/framework7.bundle.min.js"></script>
+	<script src="js/routes.js"></script>
+	<script src="js/app.js"></script>
+	
+	
+
+
+</body>
+</html>
