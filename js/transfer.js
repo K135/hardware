@@ -153,8 +153,8 @@ next4.addEventListener('click',()=>{
 function update0(){
     icon0.classList.remove('fa-dot-circle');
     icon0.classList.add('fa-check-circle');
-    icon0.style.color="rgb(34, 68, 95);";
-    text0.style.color="rgb(34, 68, 95);";
+    icon0.style.color="rgb(34, 68, 95)";
+    text0.style.color="rgb(34, 68, 95)";
     tab0.style.zIndex="10";
 }
 
@@ -162,8 +162,8 @@ function update0(){
 function update1(){
     icon1.classList.remove('fa-dot-circle');
     icon1.classList.add('fa-check-circle');
-    icon1.style.color="rgb(34, 68, 95);";
-    text1.style.color="rgb(34, 68, 95);";
+    icon1.style.color="rgb(34, 68, 95)";
+    text1.style.color="rgb(34, 68, 95)";
     tab1.style.zIndex="10";
 }
 
@@ -171,8 +171,8 @@ function update1(){
 function update2(){
     icon2.classList.remove('fa-dot-circle');
     icon2.classList.add('fa-check-circle');
-    icon2.style.color="rgb(34, 68, 95);";
-    text2.style.color="rgb(34, 68, 95);";
+    icon2.style.color="rgb(34, 68, 95)";
+    text2.style.color="rgb(34, 68, 95)";
     tab2.style.zIndex="10";
 }
 
@@ -180,16 +180,16 @@ function update2(){
  function update3(){
     icon3.classList.remove('fa-dot-circle');
     icon3.classList.add('fa-check-circle');
-    icon3.style.color="rgb(34, 68, 95);";
-    text3.style.color="rgb(34, 68, 95);";
+    icon3.style.color="rgb(34, 68, 95)";
+    text3.style.color="rgb(34, 68, 95)";
     tab3.style.zIndex="10";
 }
 
  function update4(){
     icon4.classList.remove('fa-dot-circle');
     icon4.classList.add('fa-check-circle');
-    icon4.style.color="rgb(34, 68, 95);";
-    text4.style.color="rgb(34, 68, 95);";
+    icon4.style.color="rgb(34, 68, 95)";
+    text4.style.color="rgb(34, 68, 95)";
     tab4.style.zIndex="10";
  } 
 
